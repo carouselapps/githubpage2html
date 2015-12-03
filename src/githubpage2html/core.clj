@@ -10,9 +10,9 @@
       [s] (clojure.string/replace s #"\n" " "))
 
 (defn get-content
-      [url] (html/at                                        ; content without h1
+      [url] (html/at
               (html/select (fetch-url url) [:article :> :*])
-              [:h1] nil
+              [:h1] nil                                     ; strip h1 from content
               [:p html/text-node] (fn [node] (newline-to-space node))))
 
 (defn gen-html

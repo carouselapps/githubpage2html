@@ -13,7 +13,11 @@
       [url] (html/at
               (html/select (fetch-url url) [:article :> :*])
               [:h1] nil                                     ; strip h1 from content
-              [:p html/text-node] (fn [node] (newline-to-space node))))
+              [:p html/text-node] (fn [node] (newline-to-space node))
+              [:div :pre :span] html/unwrap
+              [:div :pre :code] html/unwrap
+              [:div.highlight] html/unwrap
+              [:pre] (html/add-class "lang:clojure" "decode:true")))
 
 (defn gen-html
       [html-content] (join "" (html/emit* html-content)))

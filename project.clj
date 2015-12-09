@@ -1,4 +1,4 @@
-(defproject githubpage2html "0.1.0-SNAPSHOT"
+(defproject com.carouselapps/githubpage2html "0.1.0-SNAPSHOT"
   :description "Converts github pages to HTML ready to use for example in WordPress posts"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"

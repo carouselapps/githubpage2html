@@ -9,7 +9,7 @@ From the compiled jar:
 
     $ java -jar githubpage2html-0.1.0-standalone.jar [url]
 
-Or form lein:
+Or from lein:
 
     lein run -- [url]
 

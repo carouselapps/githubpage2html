@@ -12,10 +12,10 @@
 (defn get-lang [string]
       (if (not (nil? string))
         (let [lang (last (first (re-seq #"highlight highlight-source-([^\s]*)" string)))]
-           (cond
-             (empty? lang) nil
-             (= string lang) nil
-             :else lang))))
+             (cond
+               (empty? lang) nil
+               (= string lang) nil
+               :else lang))))
 
 (defn crayonify [div-node]
       (let [node (first (html/unwrap div-node))]

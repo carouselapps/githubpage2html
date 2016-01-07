@@ -19,3 +19,7 @@ Copyright © 2015 Carousel Apps
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
+
+## Web interface
+
+There is a SPA web interface for this at http://githubpage2html-spa.herokuapp.com/
